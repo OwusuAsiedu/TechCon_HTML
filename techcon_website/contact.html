@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - TechCon 2024</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; }
+        header, footer { background: #333; color: #fff; padding: 20px; text-align: center; }
+        nav a { color: #fff; margin: 0 10px; text-decoration: none; }
+        main { padding: 20px; max-width: 800px; margin: auto; }
+        section { margin-bottom: 30px; }
+        label { display: block; margin-top: 10px; }
+        input, textarea { width: 100%; padding: 10px; margin-top: 5px; }
+        button { margin-top: 10px; padding: 10px 20px; }
+        .social-links a { margin-right: 15px; text-decoration: none; color: #0077cc; }
+        .map-container { position: relative; width: 100%; height: 0; padding-bottom: 56.25%; }
+        .map-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Contact Us</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="schedule.html">Schedule</a>
+        <a href="register.html">Register</a>
+    </nav>
+</header>
+
+<main>
+    <!-- Contact Info -->
+    <section>
+        <h2>Email</h2>
+        <p>Official conference email: <a href="mailto:email@example.com">email@example.com</a></p>
+    </section>
+
+    <!-- Social Media Links -->
+    <section>
+        <h2>Follow Us</h2>
+        <div class="social-links">
+            <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+            <a href="https://www.twitter.com/" target="_blank">Twitter</a>
+            <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+            <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+        </div>
+    </section>
+
+    <!-- Embedded Google Map -->
+    <section>
+        <h2>Our Location</h2>
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.1234567890!2d-122.419415484681!3d37.77492977975909!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064c1234567%3A0xabcdef1234567890!2sConference%20Venue!5e0!3m2!1sen!2sus!4v1696390000000!5m2!1sen!2sus" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section>
+        <h2>Send Us a Message</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 TechCon. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
